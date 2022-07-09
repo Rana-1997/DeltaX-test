@@ -89,3 +89,5 @@ C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\bin\EntityFramewor
 C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\bin\EntityFramework.SqlServer.xml
 C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\obj\Debug\MovieApplication.Migrations.initialconfig.resources
 C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\obj\Debug\MovieApplication.csproj.GenerateResource.cache
+C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\obj\Debug\MovieApplication.Migrations.initialconfig1.resources
+C:\Users\Ranad\source\repos\MovieApplication\MovieApplication\obj\Debug\MovieApplication.Migrations.initialconfig2.resources

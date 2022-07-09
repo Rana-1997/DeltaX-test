@@ -1,0 +1,71 @@
+﻿
+@model MovieApplication.Models.Actor
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add New Actor</h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+        <h4>Actor Details</h4>
+
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div form="form-group">
+            @Html.LabelFor(x => x.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(x => x.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div form="form-group">
+            @Html.LabelFor(x => x.DateOfBirth, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(x => x.DateOfBirth, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.DateOfBirth, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div form="form-group">
+            @Html.LabelFor(x => x.MovieName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(x => x.MovieName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.MovieName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div form="form-group">
+            @Html.LabelFor(x => x.Awards, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(x => x.Awards, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.Awards, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2">
+                <input type="submit" value="Add" class="btn btn-default" />
+            </div>
+
+        </div>
+
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back To List", "Index")
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
